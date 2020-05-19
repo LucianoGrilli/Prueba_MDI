@@ -11,6 +11,12 @@ for x in range(cantCasos):
     if numeroIngreso == 1111 or numeroIngreso == 2222 or numeroIngreso == 3333 or numeroIngreso ==4444 or numeroIngreso ==5555 or numeroIngreso == 6666 or numeroIngreso ==7777 or numeroIngreso == 8888 or numeroIngreso ==9999 or numeroIngreso == 0000:
         bandera2 =True
     numeroResta =0
+   
+    for i in range(10):
+        numeroIngreso="{:04d}".format(numeroIngreso)
+        numGrande = "".join(sorted(numeroIngreso,reverse=True))
+        numChico = "".join(sorted(numeroIngreso))
 
+        numeroIngreso = int(numGrande) - int(numChico)
 
 
