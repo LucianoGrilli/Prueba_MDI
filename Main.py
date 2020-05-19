@@ -18,5 +18,22 @@ for x in range(cantCasos):
         numChico = "".join(sorted(numeroIngreso))
 
         numeroIngreso = int(numGrande) - int(numChico)
+        if bandera2 == True:
+           i=8
+           bandera2=False
+           break
 
+
+        if bandera == True:
+           i=0
+           bandera =False
+           break
+
+        if numeroIngreso == numeroResta:
+
+           break
+
+        numeroResta=numeroIngreso
+
+      
 
